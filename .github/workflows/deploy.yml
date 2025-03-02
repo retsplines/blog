@@ -47,7 +47,7 @@ jobs:
       - run: npm run build
 
       - name: Deploy to S3
-        run: aws s3 sync ./dist s3://foxdog.blog --delete
+        run: aws s3 sync ./_site s3://foxdog.blog --delete
 
       - name: Create CloudFront Invalidation
         run: aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_CF_DISTRIBUTION_ID }} --paths "/*"
