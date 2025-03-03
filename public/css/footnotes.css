@@ -1,0 +1,16 @@
+body {
+    counter-reset: footnotes;
+}
+
+[role="doc-noteref"]::after {
+  counter-increment: footnotes;
+  content: '[' counter(footnotes) ']';
+  vertical-align: super;
+  font-size: 80%;
+}
+
+.footnote__ref {
+  text-decoration: none;
+  border-bottom: 1px dotted var(--text-color);
+  color: var(--text-color) !important;
+}

@@ -1,10 +1,14 @@
+import * as fs from "fs";
 import { IdAttributePlugin, InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
-
+import EleventyPluginOgImage from 'eleventy-plugin-og-image';
+import EleventyPluginBoxicons from 'eleventy-plugin-boxicons';
 import pluginFilters from "./_config/filters.js";
+import footnotes from "eleventy-plugin-footnotes";
+import metadata from "./_data/metadata.js";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
@@ -58,11 +62,11 @@ export default async function(eleventyConfig) {
         },
         metadata: {
             language: "en",
-            title: "Blog Title",
-            subtitle: "This is a longer description about your blog.",
-            base: "https://example.com/",
+            title: metadata.title,
+            subtitle: metadata.description,
+            base: metadata.url,
             author: {
-                name: "Your Name"
+                name: metadata.author
             }
         }
     });
@@ -86,6 +90,30 @@ export default async function(eleventyConfig) {
         sharpOptions: {
             animated: true,
         },
+    });
+
+    // Open Graph image generation
+    eleventyConfig.addPlugin(EleventyPluginOgImage, {
+        satoriOptions: { 
+            fonts: [
+                {
+                    name: 'Inter',
+                    data: fs.readFileSync('node_modules/@fontsource/inter/files/inter-latin-500-normal.woff'),
+                    weight: 700,
+                    style: 'normal',
+                },
+            ],
+        },
+    });
+
+    // Footnotes support
+    eleventyConfig.addPlugin(footnotes, { 
+        baseClass: 'footnote'
+    });
+
+    // Boxicons SVG inlining
+    eleventyConfig.addPlugin(EleventyPluginBoxicons, {
+        classNames: 'boxicon'
     });
 
     // Filters
@@ -121,17 +149,4 @@ export const config = {
         data: "../_data",          // default: "_data" (`input` relative)
         output: "_site"
     },
-
-    // -----------------------------------------------------------------
-    // Optional items:
-    // -----------------------------------------------------------------
-
-    // If your site deploys to a subdirectory, change `pathPrefix`.
-    // Read more: https://www.11ty.dev/docs/config/#deploy-to-a-subdirectory-with-a-path-prefix
-
-    // When paired with the HTML <base> plugin https://www.11ty.dev/docs/plugins/html-base/
-    // it will transform any absolute URLs in your HTML to include this
-    // folder name and does **not** affect where things go in the output folder.
-
-    // pathPrefix: "/",
 };

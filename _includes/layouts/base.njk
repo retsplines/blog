@@ -8,28 +8,18 @@
         <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
         <meta name="generator" content="{{ eleventy.generator }}">
 
-        {#-
-        Plain-text bundles are provided via the `eleventy-plugin-bundle` plugin:
-        1. CSS:
-            * Add to a per-page bundle using `{% css %}{% endcss %}`
-            * Retrieve bundle content using `{% getBundle "css" %}` or `{% getBundleFileUrl "css" %}`
-        2. Or for JavaScript:
-            * Add to a per-page bundle using `{% js %}{% endjs %}`
-            * Retrieve via `{% getBundle "js" %}` or `{% getBundleFileUrl "js" %}`
-        3. Learn more: https://github.com/11ty/eleventy-plugin-bundle
-        #}
-
-        {%- css %}{% include "public/css/index.css" %}{% endcss %}
-
         {#- Render the CSS bundle using inlined CSS (for the fastest site performance in production) #}
+        {%- css %}{% include "public/css/index.css" %}{% endcss %}
         <style>{% getBundle "css" %}</style>
 
         {#- Add the heading-anchors web component to the JavaScript bundle #}
         {%- js %}{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}{% endjs %}
+
+        {% ogImage "../_includes/og-image.njk", { title: title or metadata.title } %}
+        
     </head>
     <body>
         <a href="#skip" class="visually-hidden">Skip to main content</a>
-
         <header>
             <div class="header">
                 <a href="/" class="home-link">
@@ -37,8 +27,6 @@
                         <span class="visually-hidden">FOXDOG</span>
                     </div>
                 </a>
-
-                {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
                 <nav>
                     <h2 class="visually-hidden">Top level navigation menu</h2>
                     <ul class="nav">
@@ -56,8 +44,7 @@
             </heading-anchors>
         </main>
 
-        <footer>
-        </footer>
+        <footer class="main"></footer>
 
         <!-- This page `{{ page.url }}` was built on {% currentBuildDate %} -->
         <script type="module" src="{% getBundleFileUrl "js" %}"></script>
