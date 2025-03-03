@@ -94,6 +94,10 @@ export default async function(eleventyConfig) {
 
     // Open Graph image generation
     eleventyConfig.addPlugin(EleventyPluginOgImage, {
+        shortcodeOutput: async (ogImage) =>
+            `<meta property="og:image" content="${await ogImage.outputUrl()}" />\n` + 
+            // regretfully, some sites still look for this...
+            `<meta property="twitter:image" content="${await ogImage.outputUrl()}" />`, 
         satoriOptions: { 
             fonts: [
                 {
