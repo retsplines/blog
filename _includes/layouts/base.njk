@@ -15,6 +15,11 @@
         {#- Add the heading-anchors web component to the JavaScript bundle #}
         {%- js %}{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}{% endjs %}
 
+        {#- Open Graph stuff #}
+        <meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="{{ title or metadata.title }}">
+        <meta property="og:description" content="{{ description or metadata.description }}">
         {% ogImage "../_includes/og-image.njk", { title: title or metadata.title } %}
         
     </head>
