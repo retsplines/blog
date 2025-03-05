@@ -21,7 +21,10 @@
         <meta property="og:title" content="{{ title or metadata.title }}">
         <meta property="og:description" content="{{ description or metadata.description }}">
         <meta name="twitter:card" content="summary_large_image">
-        {% ogImage "../_includes/og-image.njk", { title: title or metadata.title } %}
+        {% ogImage "../_includes/og-image.njk", { 
+            title: title or metadata.title,
+            description: description or metadata.description
+        } %}
         
     </head>
     <body>
