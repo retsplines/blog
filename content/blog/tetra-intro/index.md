@@ -9,8 +9,4 @@ I've been interested in digital radio communication ever since I first learned s
 
 During my travels, I learned about [TETRA](https://www.etsi.org/technologies/tetra), an [ETSI](https://www.etsi.org/) standard that defines a suite of radio communication tools geared towards public-safety (police, fire, emergency medical, etc) and large-scale users (airports, construction projects, public events, etc).
 
-{% gnuplot asd %}
-
-
-{% endgnuplot %}
 
