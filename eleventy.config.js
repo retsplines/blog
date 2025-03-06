@@ -7,6 +7,7 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import EleventyPluginOgImage from 'eleventy-plugin-og-image';
 import EleventyPluginBoxicons from 'eleventy-plugin-boxicons';
 import pluginFilters from "./_config/filters.js";
+import pluginGnuplot from './_config/gnuplot.js';
 import footnotes from "eleventy-plugin-footnotes";
 import metadata from "./_data/metadata.js";
 
@@ -119,6 +120,9 @@ export default async function(eleventyConfig) {
     eleventyConfig.addPlugin(EleventyPluginBoxicons, {
         classNames: 'boxicon'
     });
+
+    // Gnuplot 
+    eleventyConfig.addPlugin(pluginGnuplot);
 
     // Filters
     eleventyConfig.addPlugin(pluginFilters);
