@@ -54,7 +54,7 @@ export default function(eleventyConfig, options) {
          if (fs.existsSync(outputPath)) {
              // Return the relative path to the SVG based on the output directory
              console.log(`Using cached ${outputName}`);
-             return outputName;
+             return './' + outputName;
          }
  
          // Otherwise, we need to convert the diagram to SVG
@@ -75,7 +75,7 @@ export default function(eleventyConfig, options) {
          // Save the output to the output directory
          fs.writeFileSync(outputPath, result.stdout);
  
-         return outputName;
+         return './' + outputName;
     }
 
     /**
