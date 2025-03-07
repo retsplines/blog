@@ -7,7 +7,8 @@ export default function(eleventyConfig, options) {
 
     const drawioSearchPaths = options.drawioSearchPaths || [
         '/Applications/draw.io.app/Contents/MacOS/draw.io',
-        '/usr/local/draw.io'
+        '/usr/local/drawio',
+        '/usr/bin/drawio'
     ];
 
     let cachedDrawIoPath = null;
