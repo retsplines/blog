@@ -7,7 +7,7 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import EleventyPluginOgImage from 'eleventy-plugin-og-image';
 import EleventyPluginBoxicons from 'eleventy-plugin-boxicons';
 import pluginFilters from "./_config/filters.js";
-import pluginDrawio from "./_config/drawio.js";
+import pluginDiagrams from "./_config/diagrams.js";
 import footnotes from "eleventy-plugin-footnotes";
 import metadata from "./_data/metadata.js";
 
@@ -33,7 +33,7 @@ export default async function(eleventyConfig) {
     // https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
 
     // Watch images for the image pipeline.
-    eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpg,jpeg,gif,drawio}");
+    eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpg,jpeg,gif,gp,gv,dot}");
 
     // Per-page bundles, see https://github.com/11ty/eleventy-plugin-bundle
     // Adds the {% css %} paired shortcode
@@ -72,8 +72,8 @@ export default async function(eleventyConfig) {
         }
     });
 
-    // Draw.io diagrams
-    eleventyConfig.addPlugin(pluginDrawio, {});
+    // Charts & Diagrams
+    eleventyConfig.addPlugin(pluginDiagrams);
 
     // Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
     eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
