@@ -25,6 +25,12 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
 
+      - name: Download draw.io deb
+        run: wget https://github.com/jgraph/drawio-desktop/releases/download/v26.0.16/drawio-amd64-26.0.16.deb
+
+      - name: Install draw.io
+        run: sudo apt install ./drawio-amd64-26.0.16.deb
+
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
