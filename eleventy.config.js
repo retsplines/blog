@@ -7,6 +7,7 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import EleventyPluginOgImage from 'eleventy-plugin-og-image';
 import EleventyPluginBoxicons from 'eleventy-plugin-boxicons';
 import pluginFilters from "./_config/filters.js";
+import pluginDrawio from "./_config/drawio.js";
 import footnotes from "eleventy-plugin-footnotes";
 import metadata from "./_data/metadata.js";
 
@@ -32,7 +33,7 @@ export default async function(eleventyConfig) {
     // https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
 
     // Watch images for the image pipeline.
-    eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpg,jpeg,gif}");
+    eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpg,jpeg,gif,drawio}");
 
     // Per-page bundles, see https://github.com/11ty/eleventy-plugin-bundle
     // Adds the {% css %} paired shortcode
@@ -69,6 +70,18 @@ export default async function(eleventyConfig) {
                 name: metadata.author
             }
         }
+    });
+
+    // Draw.io diagrams
+    eleventyConfig.addPlugin(pluginDrawio, {
+
+        // Places to look for the draw.io binary
+        // We'll always try 'draw.io' in the PATH as a last resort.
+        drawioSearchPaths: [
+            '/Applications/draw.io.app/Contents/MacOS/draw.io',
+            '/usr/local/draw.io'
+        ]
+        
     });
 
     // Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
