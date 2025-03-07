@@ -73,16 +73,7 @@ export default async function(eleventyConfig) {
     });
 
     // Draw.io diagrams
-    eleventyConfig.addPlugin(pluginDrawio, {
-
-        // Places to look for the draw.io binary
-        // We'll always try 'draw.io' in the PATH as a last resort.
-        drawioSearchPaths: [
-            '/Applications/draw.io.app/Contents/MacOS/draw.io',
-            '/usr/local/draw.io'
-        ]
-        
-    });
+    eleventyConfig.addPlugin(pluginDrawio, {});
 
     // Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
     eleventyConfig.addPlugin(eleventyImageTransformPlugin, {

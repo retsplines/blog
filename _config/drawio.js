@@ -5,6 +5,8 @@ import crypto from 'crypto';
 
 export default function(eleventyConfig, options) {
 
+    // Places to look for the draw.io binary
+    // We'll always try 'draw.io' in the PATH as a last resort.
     const drawioSearchPaths = options.drawioSearchPaths || [
         '/Applications/draw.io.app/Contents/MacOS/draw.io',
         '/usr/local/drawio',
