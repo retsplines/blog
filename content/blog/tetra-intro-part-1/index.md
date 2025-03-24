@@ -2,6 +2,7 @@
 title: Introduction to TETRA - Physical Layer
 description: Part 1 of some info-dumping about TETRA. Introduces some key concepts around the physical layer.
 tags: [tetra, radio]
+hero_image: ./tetra-hts.jpg
 ---
 
 [TETRA](https://www.etsi.org/technologies/tetra) is an [ETSI](https://www.etsi.org/) standard that defines a suite of radio communication tools geared towards public-safety (police, fire, emergency medical, etc) and large-scale users (airports, construction projects, public events, etc). It's *"walkie-talkies, but for serious stuff"*.

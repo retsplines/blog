@@ -22,7 +22,8 @@
         <meta name="twitter:card" content="summary_large_image">
         {% ogImage "../_includes/og-image.njk", { 
             title: title or metadata.title,
-            description: description or metadata.description
+            description: description or metadata.description,
+            hero_image: hero_image
         } %}
         
     </head>
