@@ -79,7 +79,7 @@ The *Normal Downlink Burst* is the normal mechanism by which control information
 
 The *Synchronisation Burst* is a specialised burst containing information to allow receiving MSs to obtain timing synchronisation with the BS. It carries a block of 120 bits of synchronisation data, alongside a block of 216 usable bits. The 30-bit "Broadcast Block" is also present. The Synchronisation Burst contains a "frequency correction" field, which is a sequence that when modulated and filtered produces a tone 2.25kHz above the carrier frequency, preceded and followed by a tone 6.75kHz below the carrier frequency. These sequences allow MSs to accurately synchronise to the BS carrier frequency. 
 
-The third type of downlink burst is the *Linearisation Uplink Burst* which doesn't carry any usable data.
+The third type of downlink burst is the *Linearisation Downlink Burst* which doesn't carry any usable data.
 
 #### Uplink Bursts
 
