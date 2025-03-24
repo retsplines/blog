@@ -13,9 +13,6 @@
         {%- css %}{% include "public/css/index.css" %}{% endcss %}
         <style>{% getBundle "css" %}</style>
 
-        {#- Add the heading-anchors web component to the JavaScript bundle #}
-        {%- js %}{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}{% endjs %}
-
         {#- Open Graph stuff #}
         <meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
         <meta property="og:type" content="website">
@@ -50,9 +47,7 @@
         </header>
 
         <main id="skip">
-            <heading-anchors>
-                {{ content | safe }}
-            </heading-anchors>
+            {{ content | safe }}
         </main>
 
         <footer class="main"></footer>

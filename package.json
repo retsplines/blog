@@ -25,12 +25,18 @@
         "eleventy-plugin-boxicons": "^0.2.0",
         "eleventy-plugin-footnotes": "^0.11.0",
         "eleventy-plugin-og-image": "^4.0.1",
+        "eleventy-plugin-toc": "^1.1.5",
         "luxon": "^3.5.0",
+        "markdown-it-abbr": "^2.0.0",
+        "markdown-it-anchor": "^9.2.0",
+        "markdown-it-attrs": "^4.3.1",
+        "markdown-it-emoji": "^3.0.0",
+        "markdown-it-footnote": "^4.0.0",
+        "markdown-it-link-attributes": "^4.0.1",
+        "markdown-it-mark": "^4.0.0",
+        "markdown-it-prism": "^2.3.1",
         "prismjs": "^1.29.0",
         "zod": "^3.23.8",
         "zod-validation-error": "^3.3.1"
-    },
-    "dependencies": {
-        "@zachleat/heading-anchors": "^1.0.1"
     }
 }

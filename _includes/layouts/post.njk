@@ -37,9 +37,17 @@ layout: layouts/base.njk
 
 </ul>
 
-{{ content | safe }}
+{# Table of Contents #}
 
-{% footnotes %}
+{# <aside>
+  {{ content | toc | safe }}
+</aside> #}
+
+{# Content #}
+
+<div class="post-content">
+{{ content | safe }}
+</div>
 
 {# Next/prev #}
 {%- if collections.posts %}

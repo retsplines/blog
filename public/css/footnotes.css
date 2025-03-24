@@ -1,5 +1,9 @@
-body {
-    counter-reset: footnotes;
+section.footnotes {
+  margin-top: 2em !important;
+}
+
+hr.footnotes-sep {
+  display: none !important;
 }
 
 [role="doc-noteref"]::after {
@@ -13,4 +17,8 @@ body {
   text-decoration: none;
   border-bottom: 1px dotted var(--text-color);
   color: var(--text-color) !important;
+}
+
+ol.footnotes-list {
+  font-size: 0.8em;
 }

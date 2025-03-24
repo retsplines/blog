@@ -3,16 +3,22 @@ import { IdAttributePlugin, InputPathToUrlTransformPlugin, HtmlBasePlugin } from
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginNavigation from "@11ty/eleventy-navigation";
-import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import { eleventyImageTransformPlugin, Image } from "@11ty/eleventy-img";
 import EleventyPluginOgImage from 'eleventy-plugin-og-image';
 import EleventyPluginBoxicons from 'eleventy-plugin-boxicons';
 import pluginFilters from "./_config/filters.js";
 import pluginDiagrams from "./_config/diagrams.js";
-import footnotes from "eleventy-plugin-footnotes";
 import metadata from "./_data/metadata.js";
+import pluginTOC from "eleventy-plugin-toc";
+import markdown from "./_config/markdown.js";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
+
+    // Markdown Processor
+    eleventyConfig.setLibrary(
+        'md', markdown
+    );
 
     // Drafts, see also _data/eleventyDataSchema.js
     eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
@@ -77,23 +83,35 @@ export default async function(eleventyConfig) {
 
     // Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
     eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-        // Output formats for each image.
-        formats: ["avif", "webp", "auto"],
-
-        // widths: ["auto"],
-
+        formats: ["auto"],
+		widths: [600, 1800],
+        svgShortCircuit: true,
         failOnError: false,
+        transformOnRequest: false,
         htmlOptions: {
             imgAttributes: {
-                // e.g. <img loading decoding> assigned on the HTML tag will override these values.
                 loading: "lazy",
                 decoding: "async",
             }
         },
-
         sharpOptions: {
             animated: true,
         },
+    });
+
+    // Add a shortcode for SVGs
+    eleventyConfig.addShortcode("svg", async function (src) {
+
+        const inputPagePath = this.page.inputPath;
+        const inputPageDir = inputPagePath.substring(0, inputPagePath.lastIndexOf('/'));
+        const imagePath = `${inputPageDir}/${src}`;
+
+        const metadata = new Image(imagePath, {
+            formats: ["svg"],
+            dryRun: true,
+        });
+        
+       return await metadata.getFileContents();
     });
 
     // Open Graph image generation
@@ -114,11 +132,6 @@ export default async function(eleventyConfig) {
         },
     });
 
-    // Footnotes support
-    eleventyConfig.addPlugin(footnotes, { 
-        baseClass: 'footnote'
-    });
-
     // Boxicons SVG inlining
     eleventyConfig.addPlugin(EleventyPluginBoxicons, {
         classNames: 'boxicon'
@@ -129,6 +142,12 @@ export default async function(eleventyConfig) {
     eleventyConfig.addPlugin(IdAttributePlugin);
     eleventyConfig.addShortcode("currentBuildDate", () => {
         return (new Date()).toISOString();
+    });
+
+    // Table of Contents
+    eleventyConfig.addPlugin(pluginTOC, {
+        tags: ['h2', 'h3'],
+        wrapper: 'div'
     });
 };
 

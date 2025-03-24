@@ -13,6 +13,14 @@ You can build locally with:
     npm install
     npm run build
 
+## Plugins & Shortcodes
+
+This section is more to remind myself what is possible...
+
+* Footnotes with `^[Inline]` markdown
+* Gnuplot plots with `{% gnuplot 'relative/path/to/script.gp' %}` - outputs a relative path to an SVG, so use with `<img />`
+* Graphviz diagrams with `{% graphviz 'relative/path/to/diagram.gv' %}` - outputs a relative path to an SVG, so use with `<img />`
+
 ## Contact
 
 If you'd like to talk about anything on my blog, the best way to get in touch with me is on the [Fediverse](https://furry.engineer/@ret) or by emailing `hello` @ the blog domain name.
