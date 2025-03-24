@@ -67,7 +67,6 @@ export default function(eleventyConfig) {
             },
         });
         
-        console.log(result);
         let jpeg = result.jpeg[0].outputPath;
 
         // Read the output data
