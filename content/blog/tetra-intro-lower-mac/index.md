@@ -10,6 +10,10 @@ This is the second post in my *Introduction to TETRA* series. In this post I'll 
 
 First, I'll define some of the terminology used by this part of the stack, then move on to defining the Logical Channels and finally the error control schemes they employ.
 
+## Worked Examples & Code
+
+While experimenting with TETRA, I've written quite a bit of code to work with the Lower MAC primitives, in particular the error control schemes described in this post. I've [published](https://github.com/retsplines/tetra-lower-mac) some of this code on GitHub. I make no assertions as to the quality or correctness of this code, but corrections and additions are most welcome!
+
 ## Primer: Services, SAPs & Primitives
 
 When I first started looking at descriptions of digital radio communications systems, a few terms came up constantly which seem to have been lost to time in a world of ubiquitous IP networking where most of the gritty low-layer stuff is taken care of.
@@ -170,6 +174,6 @@ The initial state of the LFSR - called the "extended colour code" - for most cha
 
 The Broadcast Synchronisation Channel (BSCH) scrambling LFSR is initialised to all-0s, since MSs need to decode this channel before registering and before knowing the MCC/MNC/BCC.
 
-# Worked Examples & Code
+## Next Time
 
-While experimenting with TETRA, I've written quite a bit of code to work with the Lower MAC primitives, in particular the error control schemes described in this post. I've [published](https://github.com/retsplines/tetra-lower-mac) some of this code on GitHub. I make no assertions as to the quality or correctness of this code, but corrections and additions are most welcome!
+Next time, things should be a little less dry, I promise. I'll be looking at the Upper MAC, which contains a most of the MAC functionality, as well as the LLC (Logical Link Control) layer.
