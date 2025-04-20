@@ -2,6 +2,7 @@
 title: Introduction to TETRA - The Lower MAC
 description: Part 2 of some info-dumping about TETRA. Covers the Lower MAC, Logical Channels & Coding.
 tags: [tetra, radio, software, tetra-intro]
+hero_image: ./silly-sds.jpeg
 ---
 
 This is the second post in my *Introduction to TETRA* series. In this post I'll be describing the Lower MAC by talking about the Logical Channels.
