@@ -334,3 +334,13 @@ code {
         filter: grayscale(100%) invert() opacity(80%) !important;
     }
 }
+
+/* Notes */
+
+.note {
+    background-color: var(--color-gray-low);
+    border-radius: 0.5em;
+    padding: 1em;
+    border-left: 6px solid var(--color-gray-medium);
+    margin: 1em 0;
+}

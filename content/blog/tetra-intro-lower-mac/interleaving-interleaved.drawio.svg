@@ -1,0 +1,519 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" style="background: transparent; background-color: transparent; color-scheme: light dark;" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="390px" height="380px" viewBox="-0.5 -0.5 390 380" content="&lt;mxfile&gt;&lt;diagram id=&quot;zFkGw7rPlpJbiCfuFUy5&quot; name=&quot;Page-1&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs>
+        <pattern patternUnits="userSpaceOnUse" width="11.5" height="11.5" x="0" y="0" patternTransform="rotate(45)" id="mx-pattern-zigzagx-line-1-000000-0">
+            <path d="M 2.875 0 L 8.625 0 L 2.875 11.5 L 8.625 11.5" stroke="#ffffff" stroke-width="1.5" fill="none" style="stroke: light-dark(rgba(255, 0, 0, 0.7), rgba(255, 0, 0, 0.7));"/>
+        </pattern>
+    </defs>
+    <g>
+        <g>
+            <rect x="36" y="340" width="330" height="40" fill="none" stroke="none" pointer-events="all"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 328px; height: 1px; padding-top: 347px; margin-left: 37px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                <div style="display: inline-block; font-size: 10px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #FFFFFF); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                    <div>
+                                        <font face="Monaco">
+                                            <span>
+                                                Bit numbers within message after
+                                            </span>
+                                        </font>
+                                        <span style="font-family: Monaco; background-color: transparent;">
+                                            interleaving with 120/11 interleaver (as used for the BSCH)
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="201" y="357" fill="light-dark(#000000,#FFFFFF)" font-family="&quot;Helvetica&quot;" font-size="10px" text-anchor="middle">
+                        Bit numbers within message after interleaving with 120/11 interlea...
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <a xlink:href="&lt;table data-sheets-baot=&quot;1&quot; data-sheets-root=&quot;1&quot; style=&quot;table-layout:fixed;font-size:10pt;font-family:Arial;width:0px;border-collapse:collapse;border:none&quot; border=&quot;1&quot; dir=&quot;ltr&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;colgroup&gt;&lt;col width=&quot;30&quot;&gt;&lt;col width=&quot;30&quot;&gt;&lt;col width=&quot;30&quot;&gt;&lt;col width=&quot;30&quot;&gt;&lt;col width=&quot;30&quot;&gt;&lt;col width=&quot;30&quot;&gt;&lt;col width=&quot;30&quot;&gt;&lt;col width=&quot;30&quot;&gt;&lt;col width=&quot;30&quot;&gt;&lt;col width=&quot;30&quot;&gt;&lt;col width=&quot;30&quot;&gt;&lt;/colgroup&gt;&lt;tbody&gt;&lt;tr style=&quot;height:30px;&quot;&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#f0f9f5;text-align:center;&quot;&gt;12&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#e0f3ea;text-align:center;&quot;&gt;23&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#d1eddf;text-align:center;&quot;&gt;34&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#c1e6d4;text-align:center;&quot;&gt;45&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#b2e0c9;text-align:center;&quot;&gt;56&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#a2dabf;text-align:center;&quot;&gt;67&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#93d3b4;text-align:center;&quot;&gt;78&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#83cda9;text-align:center;&quot;&gt;89&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#74c79e;text-align:center;&quot;&gt;100&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#64c193;text-align:center;&quot;&gt;111&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#feffff;text-align:center;&quot;&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;height:30px;&quot;&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#fdfefe;text-align:center;&quot;&gt;3&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#63c092;text-align:center;&quot;&gt;112&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#72c69d;text-align:center;&quot;&gt;101&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#82cda8;text-align:center;&quot;&gt;90&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#91d3b3;text-align:center;&quot;&gt;79&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#a1d9be;text-align:center;&quot;&gt;68&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#b0dfc8;text-align:center;&quot;&gt;57&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#c0e6d3;text-align:center;&quot;&gt;46&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#cfecde;text-align:center;&quot;&gt;35&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#dff2e9;text-align:center;&quot;&gt;24&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#eff9f4;text-align:center;&quot;&gt;13&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;height:30px;&quot;&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#edf8f3;text-align:center;&quot;&gt;14&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#def2e8;text-align:center;&quot;&gt;25&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#ceebdd;text-align:center;&quot;&gt;36&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#bfe5d2;text-align:center;&quot;&gt;47&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#afdfc7;text-align:center;&quot;&gt;58&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#9fd9bd;text-align:center;&quot;&gt;69&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#90d2b2;text-align:center;&quot;&gt;80&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#80cca7;text-align:center;&quot;&gt;91&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#71c69c;text-align:center;&quot;&gt;102&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#61bf91;text-align:center;&quot;&gt;113&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#fbfefd;text-align:center;&quot;&gt;4&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;height:30px;&quot;&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#fafdfc;text-align:center;&quot;&gt;5&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#60bf90;text-align:center;&quot;&gt;114&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#6fc59b;text-align:center;&quot;&gt;103&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#7fcba6;text-align:center;&quot;&gt;92&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#8fd2b1;text-align:center;&quot;&gt;81&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#9ed8bc;text-align:center;&quot;&gt;70&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#aedec6;text-align:center;&quot;&gt;59&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#bde5d1;text-align:center;&quot;&gt;48&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#cdebdc;text-align:center;&quot;&gt;37&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#dcf1e7;text-align:center;&quot;&gt;26&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#ecf7f2;text-align:center;&quot;&gt;15&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;height:30px;&quot;&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#eaf7f1;text-align:center;&quot;&gt;16&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#dbf1e6;text-align:center;&quot;&gt;27&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#cbeadb;text-align:center;&quot;&gt;38&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#bce4d0;text-align:center;&quot;&gt;49&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#acdec5;text-align:center;&quot;&gt;60&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#9dd7bb;text-align:center;&quot;&gt;71&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#8dd1b0;text-align:center;&quot;&gt;82&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#7ecba5;text-align:center;&quot;&gt;93&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#6ec59a;text-align:center;&quot;&gt;104&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#5fbe8f;text-align:center;&quot;&gt;115&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#f8fdfb;text-align:center;&quot;&gt;6&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;height:30px;&quot;&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#f7fcfa;text-align:center;&quot;&gt;7&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#5dbe8e;text-align:center;&quot;&gt;116&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#6dc499;text-align:center;&quot;&gt;105&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#7ccaa4;text-align:center;&quot;&gt;94&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#8cd1af;text-align:center;&quot;&gt;83&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#9bd7ba;text-align:center;&quot;&gt;72&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#abddc5;text-align:center;&quot;&gt;61&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#bae3cf;text-align:center;&quot;&gt;50&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#caeada;text-align:center;&quot;&gt;39&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#d9f0e5;text-align:center;&quot;&gt;28&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#e9f6f0;text-align:center;&quot;&gt;17&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;height:30px;&quot;&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#e7f6ef;text-align:center;&quot;&gt;18&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#d8efe4;text-align:center;&quot;&gt;29&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#c8e9d9;text-align:center;&quot;&gt;40&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#b9e3ce;text-align:center;&quot;&gt;51&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#a9ddc4;text-align:center;&quot;&gt;62&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#9ad6b9;text-align:center;&quot;&gt;73&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#8ad0ae;text-align:center;&quot;&gt;84&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#7bcaa3;text-align:center;&quot;&gt;95&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#6bc398;text-align:center;&quot;&gt;106&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#5cbd8d;text-align:center;&quot;&gt;117&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#f6fbf9;text-align:center;&quot;&gt;8&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;height:30px;&quot;&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#f4fbf8;text-align:center;&quot;&gt;9&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#5abd8c;text-align:center;&quot;&gt;118&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#6ac397;text-align:center;&quot;&gt;107&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#79c9a2;text-align:center;&quot;&gt;96&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#89cfad;text-align:center;&quot;&gt;85&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#98d6b8;text-align:center;&quot;&gt;74&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#a8dcc3;text-align:center;&quot;&gt;63&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#b7e2cd;text-align:center;&quot;&gt;52&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#c7e9d8;text-align:center;&quot;&gt;41&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#d7efe3;text-align:center;&quot;&gt;30&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#e6f5ee;text-align:center;&quot;&gt;19&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;height:30px;&quot;&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#e5f5ed;text-align:center;&quot;&gt;20&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#d5eee2;text-align:center;&quot;&gt;31&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#c6e8d7;text-align:center;&quot;&gt;42&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#b6e2cc;text-align:center;&quot;&gt;53&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#a7dbc2;text-align:center;&quot;&gt;64&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#97d5b7;text-align:center;&quot;&gt;75&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#87cfac;text-align:center;&quot;&gt;86&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#78c9a1;text-align:center;&quot;&gt;97&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#68c296;text-align:center;&quot;&gt;108&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#59bc8b;text-align:center;&quot;&gt;119&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#f3faf7;text-align:center;&quot;&gt;10&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;height:30px;&quot;&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#f1faf6;text-align:center;&quot;&gt;11&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#57bb8a;text-align:center;&quot;&gt;120&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#67c295;text-align:center;&quot;&gt;109&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#77c8a0;text-align:center;&quot;&gt;98&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#86ceab;text-align:center;&quot;&gt;87&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#96d5b6;text-align:center;&quot;&gt;76&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#a5dbc1;text-align:center;&quot;&gt;65&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#b5e1cb;text-align:center;&quot;&gt;54&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#c4e7d6;text-align:center;&quot;&gt;43&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#d4eee1;text-align:center;&quot;&gt;32&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#e3f4ec;text-align:center;&quot;&gt;21&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;height:30px;&quot;&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#e2f3eb;text-align:center;&quot;&gt;22&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#d2ede0;text-align:center;&quot;&gt;33&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#c3e7d5;text-align:center;&quot;&gt;44&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#b3e1ca;text-align:center;&quot;&gt;55&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#a4dac0;text-align:center;&quot;&gt;66&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#94d4b5;text-align:center;&quot;&gt;77&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#85ceaa;text-align:center;&quot;&gt;88&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#75c79f;text-align:center;&quot;&gt;99&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#66c194;text-align:center;&quot;&gt;110&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#ffffff;text-align:center;&quot;&gt;1&lt;/td&gt;&lt;td style=&quot;overflow:hidden;padding:2px 3px 2px 3px;vertical-align:middle;background-color:#d9d9d9;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;">
+            <g>
+                <rect x="36" y="0" width="330" height="340" fill="none" stroke="none" pointer-events="all"/>
+            </g>
+            <g>
+                <g transform="translate(-0.5 -0.5)">
+                    <switch>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                            <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 328px; height: 1px; padding-top: 7px; margin-left: 38px;">
+                                <div style="box-sizing: border-box; font-size: 0; text-align: left; color: #000000; ">
+                                    <div style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                        <table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" cellpadding="0" dir="ltr" border="1" style="table-layout:fixed;font-size:10pt;font-family:Arial;width:0px;border-collapse:collapse;border:none" data-sheets-root="1" data-sheets-baot="1">
+                                            <colgroup>
+                                                <col width="30"/>
+                                                <col width="30"/>
+                                                <col width="30"/>
+                                                <col width="30"/>
+                                                <col width="30"/>
+                                                <col width="30"/>
+                                                <col width="30"/>
+                                                <col width="30"/>
+                                                <col width="30"/>
+                                                <col width="30"/>
+                                                <col width="30"/>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr style="height:30px;">
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(240, 249, 245), rgb(19, 27, 24)); text-align: center;">
+                                                        12
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(224, 243, 234), rgb(19, 36, 28)); text-align: center;">
+                                                        23
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(209, 237, 223), rgb(21, 45, 33)); text-align: center;">
+                                                        34
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(193, 230, 212), rgb(23, 55, 39)); text-align: center;">
+                                                        45
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(178, 224, 201), rgb(25, 64, 45)); text-align: center;">
+                                                        56
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(162, 218, 191), rgb(26, 74, 51)); text-align: center;">
+                                                        67
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(147, 211, 180), rgb(28, 83, 57)); text-align: center;">
+                                                        78
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(131, 205, 169), rgb(29, 92, 61)); text-align: center;">
+                                                        89
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(116, 199, 158), rgb(30, 101, 66)); text-align: center;">
+                                                        100
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(100, 193, 147), rgb(31, 111, 71)); text-align: center;">
+                                                        111
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(254, 255, 255), rgb(17, 18, 18)); text-align: center;">
+                                                        2
+                                                    </td>
+                                                </tr>
+                                                <tr style="height:30px;">
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(253, 254, 254), rgb(18, 19, 19)); text-align: center;">
+                                                        3
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(99, 192, 146), rgb(32, 112, 72)); text-align: center;">
+                                                        112
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(114, 198, 157), rgb(31, 103, 68)); text-align: center;">
+                                                        101
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(130, 205, 168), rgb(29, 93, 61)); text-align: center;">
+                                                        90
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(145, 211, 179), rgb(28, 84, 57)); text-align: center;">
+                                                        79
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(161, 217, 190), rgb(27, 75, 52)); text-align: center;">
+                                                        68
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(176, 223, 200), rgb(24, 65, 45)); text-align: center;">
+                                                        57
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(192, 230, 211), rgb(22, 55, 38)); text-align: center;">
+                                                        46
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(207, 236, 222), rgb(21, 46, 34)); text-align: center;">
+                                                        35
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(223, 242, 233), rgb(21, 37, 29)); text-align: center;">
+                                                        24
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(239, 249, 244), rgb(18, 27, 23)); text-align: center;">
+                                                        13
+                                                    </td>
+                                                </tr>
+                                                <tr style="height:30px;">
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(237, 248, 243), rgb(19, 28, 24)); text-align: center;">
+                                                        14
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(222, 242, 232), rgb(21, 38, 29)); text-align: center;">
+                                                        25
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(206, 235, 221), rgb(22, 47, 35)); text-align: center;">
+                                                        36
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(191, 229, 210), rgb(23, 56, 39)); text-align: center;">
+                                                        47
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(175, 223, 199), rgb(24, 66, 45)); text-align: center;">
+                                                        58
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(159, 217, 189), rgb(26, 75, 51)); text-align: center;">
+                                                        69
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(144, 210, 178), rgb(29, 85, 58)); text-align: center;">
+                                                        80
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(128, 204, 167), rgb(29, 94, 62)); text-align: center;">
+                                                        91
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(113, 198, 156), rgb(30, 103, 67)); text-align: center;">
+                                                        102
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(97, 191, 145), rgb(32, 113, 74)); text-align: center;">
+                                                        113
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(251, 254, 253), rgb(18, 20, 19)); text-align: center;">
+                                                        4
+                                                    </td>
+                                                </tr>
+                                                <tr style="height:30px;">
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(250, 253, 252), rgb(19, 21, 21)); text-align: center;">
+                                                        5
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(96, 191, 144), rgb(32, 114, 74)); text-align: center;">
+                                                        114
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(111, 197, 155), rgb(31, 105, 69)); text-align: center;">
+                                                        103
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(127, 203, 166), rgb(30, 95, 64)); text-align: center;">
+                                                        92
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(143, 210, 177), rgb(28, 85, 57)); text-align: center;">
+                                                        81
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(158, 216, 188), rgb(26, 76, 52)); text-align: center;">
+                                                        70
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(174, 222, 198), rgb(25, 67, 46)); text-align: center;">
+                                                        59
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(189, 229, 209), rgb(22, 57, 40)); text-align: center;">
+                                                        48
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(205, 235, 220), rgb(22, 48, 35)); text-align: center;">
+                                                        37
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(220, 241, 231), rgb(21, 39, 31)); text-align: center;">
+                                                        26
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(236, 247, 242), rgb(20, 29, 25)); text-align: center;">
+                                                        15
+                                                    </td>
+                                                </tr>
+                                                <tr style="height:30px;">
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(234, 247, 241), rgb(19, 30, 25)); text-align: center;">
+                                                        16
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(219, 241, 230), rgb(20, 39, 30)); text-align: center;">
+                                                        27
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(203, 234, 219), rgb(22, 49, 36)); text-align: center;">
+                                                        38
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(188, 228, 208), rgb(24, 58, 41)); text-align: center;">
+                                                        49
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(172, 222, 197), rgb(24, 67, 45)); text-align: center;">
+                                                        60
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(157, 215, 187), rgb(27, 77, 53)); text-align: center;">
+                                                        71
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(141, 209, 176), rgb(27, 86, 57)); text-align: center;">
+                                                        82
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(126, 203, 165), rgb(30, 96, 64)); text-align: center;">
+                                                        93
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(110, 197, 154), rgb(30, 105, 68)); text-align: center;">
+                                                        104
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(95, 190, 143), rgb(33, 114, 74)); text-align: center;">
+                                                        115
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(248, 253, 251), rgb(18, 22, 21)); text-align: center;">
+                                                        6
+                                                    </td>
+                                                </tr>
+                                                <tr style="height:30px;">
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(247, 252, 250), rgb(17, 22, 20)); text-align: center;">
+                                                        7
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(93, 190, 142), rgb(32, 115, 74)); text-align: center;">
+                                                        116
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(109, 196, 153), rgb(32, 106, 69)); text-align: center;">
+                                                        105
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(124, 202, 164), rgb(29, 97, 64)); text-align: center;">
+                                                        94
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(140, 209, 175), rgb(27, 87, 57)); text-align: center;">
+                                                        83
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(155, 215, 186), rgb(26, 78, 53)); text-align: center;">
+                                                        72
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(171, 221, 197), rgb(25, 68, 47)); text-align: center;">
+                                                        61
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(186, 227, 207), rgb(24, 59, 42)); text-align: center;">
+                                                        50
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(202, 234, 218), rgb(23, 50, 36)); text-align: center;">
+                                                        39
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(217, 240, 229), rgb(21, 41, 32)); text-align: center;">
+                                                        28
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(233, 246, 240), rgb(20, 31, 26)); text-align: center;">
+                                                        17
+                                                    </td>
+                                                </tr>
+                                                <tr style="height:30px;">
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(231, 246, 239), rgb(20, 32, 26)); text-align: center;">
+                                                        18
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(216, 239, 228), rgb(22, 41, 32)); text-align: center;">
+                                                        29
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(200, 233, 217), rgb(23, 51, 37)); text-align: center;">
+                                                        40
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(185, 227, 206), rgb(24, 60, 42)); text-align: center;">
+                                                        51
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(169, 221, 196), rgb(24, 69, 47)); text-align: center;">
+                                                        62
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(154, 214, 185), rgb(27, 79, 54)); text-align: center;">
+                                                        73
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(138, 208, 174), rgb(28, 88, 58)); text-align: center;">
+                                                        84
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(123, 202, 163), rgb(29, 97, 63)); text-align: center;">
+                                                        95
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(107, 195, 152), rgb(31, 107, 70)); text-align: center;">
+                                                        106
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(92, 189, 141), rgb(33, 116, 75)); text-align: center;">
+                                                        117
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(246, 251, 249), rgb(18, 23, 21)); text-align: center;">
+                                                        8
+                                                    </td>
+                                                </tr>
+                                                <tr style="height:30px;">
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(244, 251, 248), rgb(18, 24, 21)); text-align: center;">
+                                                        9
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(90, 189, 140), rgb(32, 117, 75)); text-align: center;">
+                                                        118
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(106, 195, 151), rgb(30, 107, 69)); text-align: center;">
+                                                        107
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(121, 201, 162), rgb(29, 98, 64)); text-align: center;">
+                                                        96
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(137, 207, 173), rgb(29, 89, 60)); text-align: center;">
+                                                        85
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(152, 214, 184), rgb(26, 79, 53)); text-align: center;">
+                                                        74
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(168, 220, 195), rgb(25, 70, 49)); text-align: center;">
+                                                        63
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(183, 226, 205), rgb(24, 61, 43)); text-align: center;">
+                                                        52
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(199, 233, 216), rgb(22, 51, 37)); text-align: center;">
+                                                        41
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(215, 239, 227), rgb(22, 42, 32)); text-align: center;">
+                                                        30
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(230, 245, 238), rgb(19, 32, 26)); text-align: center;">
+                                                        19
+                                                    </td>
+                                                </tr>
+                                                <tr style="height:30px;">
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(229, 245, 237), rgb(19, 33, 26)); text-align: center;">
+                                                        20
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(213, 238, 226), rgb(21, 43, 32)); text-align: center;">
+                                                        31
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(198, 232, 215), rgb(23, 52, 38)); text-align: center;">
+                                                        42
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(182, 226, 204), rgb(24, 62, 43)); text-align: center;">
+                                                        53
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(167, 219, 194), rgb(26, 71, 50)); text-align: center;">
+                                                        64
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(151, 213, 183), rgb(27, 80, 54)); text-align: center;">
+                                                        75
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(135, 207, 172), rgb(28, 90, 60)); text-align: center;">
+                                                        86
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(120, 201, 161), rgb(29, 99, 64)); text-align: center;">
+                                                        97
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(104, 194, 150), rgb(31, 109, 71)); text-align: center;">
+                                                        108
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(89, 188, 139), rgb(32, 118, 75)); text-align: center;">
+                                                        119
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(243, 250, 247), rgb(19, 25, 22)); text-align: center;">
+                                                        10
+                                                    </td>
+                                                </tr>
+                                                <tr style="height:30px;">
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(241, 250, 246), rgb(18, 26, 22)); text-align: center;">
+                                                        11
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(87, 187, 138), rgb(33, 119, 77)); text-align: center;">
+                                                        120
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(103, 194, 149), rgb(30, 109, 70)); text-align: center;">
+                                                        109
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(119, 200, 160), rgb(30, 100, 65)); text-align: center;">
+                                                        98
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(134, 206, 171), rgb(29, 91, 61)); text-align: center;">
+                                                        87
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(150, 213, 182), rgb(27, 81, 54)); text-align: center;">
+                                                        76
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(165, 219, 193), rgb(26, 72, 50)); text-align: center;">
+                                                        65
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(181, 225, 203), rgb(25, 62, 43)); text-align: center;">
+                                                        54
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(196, 231, 214), rgb(22, 53, 38)); text-align: center;">
+                                                        43
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(212, 238, 225), rgb(21, 44, 32)); text-align: center;">
+                                                        32
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(227, 244, 236), rgb(19, 34, 27)); text-align: center;">
+                                                        21
+                                                    </td>
+                                                </tr>
+                                                <tr style="height:30px;">
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(226, 243, 235), rgb(20, 35, 28)); text-align: center;">
+                                                        22
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(210, 237, 224), rgb(21, 45, 33)); text-align: center;">
+                                                        33
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(195, 231, 213), rgb(22, 53, 37)); text-align: center;">
+                                                        44
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(179, 225, 202), rgb(24, 63, 44)); text-align: center;">
+                                                        55
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(164, 218, 192), rgb(27, 73, 51)); text-align: center;">
+                                                        66
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(148, 212, 181), rgb(27, 82, 56)); text-align: center;">
+                                                        77
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(133, 206, 170), rgb(28, 91, 60)); text-align: center;">
+                                                        88
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(117, 199, 159), rgb(30, 101, 67)); text-align: center;">
+                                                        99
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(102, 193, 148), rgb(32, 110, 71)); text-align: center;">
+                                                        110
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); text-align: center;">
+                                                        1
+                                                    </td>
+                                                    <td style="overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: light-dark(rgb(217, 217, 217), rgb(51, 51, 51));"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </foreignObject>
+                        <text x="38" y="19" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="12px">
+                            1223344556677889100111231121019079685746352413142536475...
+                        </text>
+                    </switch>
+                </g>
+            </g>
+        </a>
+        <g>
+            <rect x="100" y="127" width="268" height="30" fill="url(#mx-pattern-zigzagx-line-1-000000-0)" stroke="none" pointer-events="all"/>
+        </g>
+        <g>
+            <rect x="130" y="157" width="238" height="30" fill="url(#mx-pattern-zigzagx-line-1-000000-0)" stroke="none" pointer-events="all"/>
+        </g>
+        <g>
+            <path d="M 7 22.5 L 29.63 22.5" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(128, 128, 128));"/>
+            <path d="M 34.88 22.5 L 27.88 26 L 29.63 22.5 L 27.88 19 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(128, 128, 128)); stroke: light-dark(rgb(0, 0, 0), rgb(128, 128, 128));"/>
+        </g>
+        <g>
+            <path d="M 369 22.5 Q 404 39.5 374.97 50.28" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(128, 128, 128));"/>
+            <path d="M 370.05 52.11 L 375.39 46.39 L 374.97 50.28 L 377.83 52.95 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(128, 128, 128)); stroke: light-dark(rgb(0, 0, 0), rgb(128, 128, 128));"/>
+        </g>
+        <g>
+            <path d="M 39 51.5 Q 7 65.5 33.3 78.65" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(128, 128, 128));"/>
+            <path d="M 38 81 L 30.17 81 L 33.3 78.65 L 33.3 74.74 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(128, 128, 128)); stroke: light-dark(rgb(0, 0, 0), rgb(128, 128, 128));"/>
+        </g>
+        <g>
+            <path d="M 369 84.5 Q 404 101.5 374.97 112.28" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(128, 128, 128));"/>
+            <path d="M 370.05 114.11 L 375.39 108.39 L 374.97 112.28 L 377.83 114.95 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(128, 128, 128)); stroke: light-dark(rgb(0, 0, 0), rgb(128, 128, 128));"/>
+        </g>
+        <g>
+            <path d="M 369 142.5 Q 404 159.5 374.97 170.28" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(128, 128, 128));"/>
+            <path d="M 370.05 172.11 L 375.39 166.39 L 374.97 170.28 L 377.83 172.95 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(128, 128, 128)); stroke: light-dark(rgb(0, 0, 0), rgb(128, 128, 128));"/>
+        </g>
+        <g>
+            <path d="M 369 202.5 Q 404 219.5 374.97 230.28" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(128, 128, 128));"/>
+            <path d="M 370.05 232.11 L 375.39 226.39 L 374.97 230.28 L 377.83 232.95 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(128, 128, 128)); stroke: light-dark(rgb(0, 0, 0), rgb(128, 128, 128));"/>
+        </g>
+        <g>
+            <path d="M 369 263.5 Q 404 280.5 374.97 291.28" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(128, 128, 128));"/>
+            <path d="M 370.05 293.11 L 375.39 287.39 L 374.97 291.28 L 377.83 293.95 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(128, 128, 128)); stroke: light-dark(rgb(0, 0, 0), rgb(128, 128, 128));"/>
+        </g>
+        <g>
+            <path d="M 39 111.5 Q 7 125.5 33.3 138.65" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(128, 128, 128));"/>
+            <path d="M 38 141 L 30.17 141 L 33.3 138.65 L 33.3 134.74 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(128, 128, 128)); stroke: light-dark(rgb(0, 0, 0), rgb(128, 128, 128));"/>
+        </g>
+        <g>
+            <path d="M 39 171.5 Q 7 185.5 33.3 198.65" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(128, 128, 128));"/>
+            <path d="M 38 201 L 30.17 201 L 33.3 198.65 L 33.3 194.74 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(128, 128, 128)); stroke: light-dark(rgb(0, 0, 0), rgb(128, 128, 128));"/>
+        </g>
+        <g>
+            <path d="M 38 231.5 Q 6 245.5 32.3 258.65" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(128, 128, 128));"/>
+            <path d="M 37 261 L 29.17 261 L 32.3 258.65 L 32.3 254.74 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(128, 128, 128)); stroke: light-dark(rgb(0, 0, 0), rgb(128, 128, 128));"/>
+        </g>
+        <g>
+            <path d="M 38 291.5 Q 6 305.5 32.3 318.65" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(128, 128, 128));"/>
+            <path d="M 37 321 L 29.17 321 L 32.3 318.65 L 32.3 314.74 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(128, 128, 128)); stroke: light-dark(rgb(0, 0, 0), rgb(128, 128, 128));"/>
+        </g>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.drawio.com/doc/faq/svg-export-text-problems" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Text is not SVG - cannot display
+            </text>
+        </a>
+    </switch>
+</svg>

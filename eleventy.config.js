@@ -11,6 +11,7 @@ import pluginDiagrams from "./_config/diagrams.js";
 import metadata from "./_data/metadata.js";
 import pluginTOC from "eleventy-plugin-toc";
 import markdown from "./_config/markdown.js";
+import pluginNotes from "./_config/notes.js";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
@@ -143,6 +144,9 @@ export default async function(eleventyConfig) {
     eleventyConfig.addShortcode("currentBuildDate", () => {
         return (new Date()).toISOString();
     });
+
+    // Notes
+    eleventyConfig.addPlugin(pluginNotes);
 
     // Table of Contents
     eleventyConfig.addPlugin(pluginTOC, {
