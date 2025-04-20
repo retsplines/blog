@@ -2,6 +2,7 @@
 title: Awoof, World
 description: The first post on Ret's Blog
 tags: meta
+date: 2025-03-02
 ---
 
 It's about time I got a blog. 
