@@ -138,9 +138,9 @@ article {
 
     p > code {
         white-space: nowrap;
-        background-color: var(--color-gray-low);
+        background-color: var(--background-color-alt);
         padding: 0.1em 0.4em;
-        border: 1px solid var(--color-gray-medium);
+        border: 0.5px solid var(--color-gray-medium);
         border-radius: 0.25em;
     }
 
