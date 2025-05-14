@@ -2,9 +2,6 @@ import { promisify } from 'util';
 import { exec } from 'child_process';
 import fs from 'fs';
 import crypto from 'crypto';
-import debug from 'debug';
-
-const log = debug('diagrams');
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default function (eleventyConfig, options) {
@@ -43,8 +40,6 @@ export default function (eleventyConfig, options) {
             returnContent = false;
         }
 
-        debug.log('processFile', inputPath, outputDir, args);
-
         // If the input path doesn't exist or isn't a file, return an error
         if (!fs.existsSync(inputPath) || !fs.lstatSync(inputPath).isFile()) {
             console.error(`Could not find script at ${inputPath}`);
@@ -63,7 +58,6 @@ export default function (eleventyConfig, options) {
         // Check if the output file already exists
         if (fs.existsSync(outputPath)) {
             // Return the relative path to the SVG based on the output directory
-            console.log(`Using cached ${outputName}`);
             return outputName;
         }
 
@@ -73,10 +67,8 @@ export default function (eleventyConfig, options) {
             fs.mkdirSync(outputDir, { recursive: true });
         }
 
-
         // Run the renderer binary
         const command = args.join(' ');
-        console.log(`Running command: ${command}`);
 
         // Run asynchronously
         const execAsync = promisify(exec);
