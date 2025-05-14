@@ -1,4 +1,5 @@
 {%- css %}
+    {% include "style/pages/posts-list.css" %}
     .postlist { counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }} }
 {% endcss %}
 <ol reversed class="postlist">

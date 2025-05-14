@@ -1,0 +1,228 @@
+/**
+ * Post-specific styles.
+ */
+
+/* Post header, contains the title, post-metadata and has a background that may be a hero image */
+section.post-header {
+
+    height: 20em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .contained {
+        margin: auto;
+    }
+
+    .cover {
+        width: 100%;
+        height: 100%;
+        color: #e4e1ec;
+        display: flex;
+        justify-content: flex-start;
+        text-align: center;
+    
+        &.has-image {
+            backdrop-filter: blur(7px);
+            background: rgba(0, 0, 0, 0.35);
+        }
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+
+    a {
+        color: #e4e1ec;
+    }
+
+    /* Post Metadata List */
+    .post-metadata {
+        display: flex;
+        font-size: 0.8em;
+        justify-content: center;
+        gap: 1em;
+        list-style: none !important;
+        padding: 0;
+
+        .boxicon {
+            width: 1.2em;
+            fill: #e4e1ec;
+        }
+
+        li {
+            margin-right: 0.5em;
+            white-space: nowrap;
+        }
+    }
+
+    /* Post Tag List */
+    .post-tags {
+        font-size: 0.8em;
+        display: inline-flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 0.8em;
+        li {
+            margin: 0;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 0.1em;
+            padding: 0.2em 0.4em;
+            line-height: 1em;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+
+    /* mobile-width, swap to rows for post metadata items */
+    @media (max-width: 600px) {
+        .post-metadata {
+            flex-direction: column;
+        }
+        .post-metadata > li {
+            overflow-x: auto;
+        }
+    }
+}
+
+/**
+ * Post content.
+ */
+
+article {
+
+    margin-top: 2em;
+
+    h1, h2, h3, h4, h5 {
+        margin-top: 1.5em;
+    }
+
+    img, picture, svg, figure, .diagram {
+        height: auto;
+        display: block;
+        max-width: 100% !important;
+        margin: 1.5em auto;
+        padding: 0.6em 0;
+    }
+
+    figure, figcaption {
+        font-style: italic;
+        font-size: 0.85rem;
+        text-align: center;
+        color: var(--color-gray-medium);
+    }
+
+    /* Code - as inline and blocks */
+    pre {
+        margin-top: 2em !important;
+        font-family: var(--font-family-monospace);
+        :not([class*="language-"]) {
+            line-height: 1.375; /* 22px /16 */
+            -moz-tab-size: var(--syntax-tab-size);
+            -o-tab-size: var(--syntax-tab-size);
+            tab-size: var(--syntax-tab-size);
+            -webkit-hyphens: none;
+            -ms-hyphens: none;
+            hyphens: none;
+            direction: ltr;
+            text-align: left;
+            white-space: pre;
+            word-spacing: normal;
+            word-break: normal;
+            overflow-x: auto;
+        }
+    }
+
+    p > code {
+        white-space: nowrap;
+        background-color: var(--color-gray-low);
+        padding: 0.1em 0.4em;
+        border: 1px solid var(--color-gray-medium);
+        border-radius: 0.25em;
+    }
+
+    /* Override SVG sizing */
+    svg {
+        height: auto !important;
+        max-width: 100%;
+    }
+    img.invert-dark {
+        filter: grayscale(100%) opacity(80%);
+    }
+    @media (prefers-color-scheme: dark) {
+        img.invert-dark {
+            filter: grayscale(100%) invert() opacity(80%) !important;
+        }
+    }   
+
+    /* Notes */
+    .note {
+        background-color: var(--color-gray-low);
+        border-radius: 0.5em;
+        padding: 1em;
+        border-left: 6px solid var(--color-gray-medium);
+        margin: 1em 0;
+    }
+
+    /* Diagrams - which always have a white background for clarity */
+    .diagram {
+        background: #fff;
+        border-radius: 0.5em;
+
+        img, picture, svg, figure {
+            margin: auto;
+        }
+    }
+
+}
+
+/** 
+ * Footnotes
+ */
+
+section.footnotes {
+    margin-top: 2em !important;
+    border-top: 1px dotted var(--color-gray-medium);
+    padding-top: 1em;
+
+    ol {
+        font-size: 0.8em;
+        li {
+            margin: 0.8em 0;
+        }
+    }
+}
+
+/* Hide the annoying <hr> that the footnotes plugin emits */
+hr.footnotes-sep {
+  display: none !important;
+}
+
+/* Inline footnote numbers like [1] */
+sup.footnote-ref > a {
+  text-decoration: none;
+  color: var(--text-color-link) !important;
+}
+
+/**
+ * Inter-post nav
+ */
+
+.links-nextprev {
+    display: flex;
+    justify-content: space-between;
+    gap: .5em 1em;
+    list-style: "";
+    margin-top: 2em;
+    border-top: 1px dotted var(--color-gray-medium);
+    padding: 1em 0;
+}
+.links-nextprev > * {
+    flex-grow: 1;
+}
+.links-nextprev-next {
+    text-align: right;
+}

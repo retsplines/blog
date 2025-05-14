@@ -43,6 +43,33 @@ export default function(eleventyConfig) {
         (strings || []).sort((b, a) => b.localeCompare(a))
     );
 
+    eleventyConfig.addFilter("imageUrl", async function(image, options) {
+           
+        if (!image) {
+            return '';
+        }
+
+        // Get the base path of the inputPath
+        let inputPagePath = this.page.inputPath;
+        let inputPageDir = inputPagePath.substring(0, inputPagePath.lastIndexOf('/'));
+
+        // Replace relative prefix
+        if (image.startsWith('./')) {
+            image = image.replace('./', '');
+        }
+
+        let imagePath = `${inputPageDir}/${image}`;
+
+        // Resize the image first
+        let imageOptions = {
+            outputDir: './_site/img/',
+            ...options
+        }
+        let result = await Image(imagePath, imageOptions);
+        
+        return result.jpeg[0].url;
+    });
+
     eleventyConfig.addFilter("imageDataUrl", async function(image) {
         
         // Get the base path of the inputPath

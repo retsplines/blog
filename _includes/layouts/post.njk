@@ -4,38 +4,51 @@ layout: layouts/base.njk
 
 {# Syntax highlighting/diffing #}
 {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
-{%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
+{%- css %}{% include "style/pages/post/prism-diff.css" %}{%- endcss %}
 
-{# Footnotes rendering #}
-{%- css %}{% include "public/css/footnotes.css" %}{% endcss %}
+{# Post-specific styles #}
+{%- css %}{% include "style/pages/post.css" %}{%- endcss %}
 
-<h1>{{ title }}</h1>
+<section class="post-header"  style="background-color: {{ accent | default('black') }}; background-image: url({{ hero_image | imageUrl() }})">
+    
+    <div class="cover {% if hero_image %}has-image{% endif %}">
 
-<ul class="post-metadata">
+        <div class="contained">
 
-    <li>
-        {% boxicon "calendar-alt" %}
-        <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
-    </li>
+            <h1>{{ title }}</h1>
 
-    <li>
-        {% boxicon "tag" %}
-        <ul class="tags">
-            {%- for tag in tags | filterTagList %}
-            {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-            <li>
-                <a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>
-            </li>
-            {%- endfor %}
-        </ul>
-    </li>
+            {% if (tags | filterTagList).length > 0 %}
+            <ul class="post-tags">
+                {%- for tag in tags | filterTagList %}
+                {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+                <li>
+                    <a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>
+                </li>
+                {%- endfor %}
+            </ul>
+            {% endif %}
 
-    <li class="right">
-        {% boxicon "github", "logos" %}
-        <a href="{{ metadata.repo }}/{{ page.inputPath }}" target="_blank">Source</a>
-    </li>
+            <ul class="post-metadata">
 
-</ul>
+                <li>
+                    {% boxicon "calendar-alt" %}
+                    <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+                </li>
+
+                <li class="right">
+                    {% boxicon "github", "logos" %}
+                    <a href="{{ metadata.repo }}/{{ page.inputPath }}" target="_blank">Source</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    
+
+</section>
 
 {# Table of Contents #}
 
@@ -45,12 +58,13 @@ layout: layouts/base.njk
 
 {# Content #}
 
-<div class="post-content">
-{{ content | safe }}
-</div>
+<article class="contained">
+    {{ content | safe }}
+</article>
 
 {# Next/prev #}
 {%- if collections.posts %}
+<div class="contained">
 {%- set previousPost = collections.posts | getPreviousCollectionItem %}
 {%- set nextPost = collections.posts | getNextCollectionItem %}
 {%- if nextPost or previousPost %}
@@ -59,4 +73,5 @@ layout: layouts/base.njk
     {%- if nextPost %}<li class="links-nextprev-next">Next →<br><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
 </ul>
 {%- endif %}
+</div>
 {%- endif %}

@@ -3,5 +3,6 @@ export default {
         "posts"
     ],
     "layout": "layouts/post.njk",
-    "date": "git Last Modified"
+    "date": "git Last Modified",
+    "accent": "black",
 };

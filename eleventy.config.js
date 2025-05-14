@@ -1,4 +1,5 @@
 import * as fs from "fs";
+import { transform } from "lightningcss";
 import { IdAttributePlugin, InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
@@ -12,6 +13,7 @@ import metadata from "./_data/metadata.js";
 import pluginTOC from "eleventy-plugin-toc";
 import markdown from "./_config/markdown.js";
 import pluginNotes from "./_config/notes.js";
+
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
@@ -41,12 +43,30 @@ export default async function(eleventyConfig) {
 
     // Watch images for the image pipeline.
     eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpg,jpeg,gif,gp,gv,dot}");
+    eleventyConfig.addWatchTarget("style/**/*.css");
 
     // Per-page bundles, see https://github.com/11ty/eleventy-plugin-bundle
     // Adds the {% css %} paired shortcode
     eleventyConfig.addBundle("css", {
         toFileDirectory: "dist",
+        transforms: [
+             async function (content) {
+                if (this.type === "css") {
+                    let result = await transform({
+                        code: Buffer.from(content),
+                        minify: false,
+                        sourceMap: false,
+                        drafts: {
+                            nesting: true,
+                        },
+                    });
+                    return result.code;
+                }
+                return content;
+            },
+        ]
     });
+
     // Adds the {% js %} paired shortcode
     eleventyConfig.addBundle("js", {
         toFileDirectory: "dist",

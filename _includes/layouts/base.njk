@@ -10,7 +10,15 @@
         <meta name="generator" content="{{ eleventy.generator }}">
 
         {#- Render the CSS bundle using inlined CSS (for the fastest site performance in production) #}
-        {%- css %}{% include "public/css/index.css" %}{% endcss %}
+        {%- css %}
+        {% include "style/reset.css" %}
+        {% include "style/variables.css" %}
+        {% include "style/global.css" %}
+        {% include "style/layout.css" %}
+        {% include "style/header.css" %}
+        {% include "style/footer.css" %}
+
+        {% endcss %}
         <style>{% getBundle "css" %}</style>
 
         {#- Open Graph stuff #}
@@ -23,28 +31,29 @@
         {% ogImage "../_includes/og-image.njk", { 
             title: title or metadata.title,
             description: description or metadata.description,
-            hero_image: hero_image
+            hero_image: hero_image,
+            accent: accent
         } %}
         
     </head>
     <body>
         <a href="#skip" class="visually-hidden">Skip to main content</a>
         <header>
-            <div class="header">
-                <a href="/" class="home-link">
+            <div class="contained">
+                <a href="/">
                     <div class="logo">
                         <span class="visually-hidden">FOXDOG</span>
                     </div>
                 </a>
                 <nav>
                     <h2 class="visually-hidden">Top level navigation menu</h2>
-                    <ul class="nav">
+                    <ul>
                     {%- for entry in collections.all | eleventyNavigation %}
-                        <li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
+                        <li><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
                     {%- endfor %}
-                    <li class="nav-item">
-                        <a href="/feed/feed.xml" target="_blank">Feed</a>
-                    </li>
+                        <li>
+                            <a href="/feed/feed.xml" target="_blank">Feed</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -54,7 +63,13 @@
             {{ content | safe }}
         </main>
 
-        <footer class="main"></footer>
+        <footer>
+            <div class="contained">
+                <div class="blep">
+                    {% include "blep.njk" %}
+                </div>
+            </div>
+        </footer>
 
         <!-- This page `{{ page.url }}` was built on {% currentBuildDate %} -->
         <script type="module" src="{% getBundleFileUrl "js" %}"></script>

@@ -1,0 +1,51 @@
+header {
+
+    background-color: var(--background-color-alt);
+    padding: 0 2em;
+
+    .contained {
+        height: 5em;
+        max-width: 60em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+
+    /* Logo, which is regrettably an image for now */
+    .logo {
+        background-image: var(--logo);
+        background-size: contain;
+        width: 100px;
+        height: 20px;
+    }
+
+    /* Main navigation */
+    nav {
+        ul {
+            display: flex;
+            gap: .5em 1em;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+            li {
+                display: inline-block;
+
+                a {
+                    text-decoration: none !important;
+                    color: var(--text-color) !important;
+
+                    &:hover {
+                        color: var(--text-color-link-active) !important;
+                    }
+
+                    &[aria-current="page"] {
+                        border-bottom: 2px solid var(--text-color);
+                    }
+                }
+            }
+        }
+    }
+}

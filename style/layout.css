@@ -1,0 +1,12 @@
+/*
+ * Layout styles.
+ */
+
+/* Centred container */
+.contained {
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2em;
+}
+
