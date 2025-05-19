@@ -98,7 +98,6 @@ section.post-header {
     grid-template-columns: 1fr var(--content-width) 1fr;
     gap: 2em;
     margin-top: 2em;
-    padding: 0 2em;
 
     .left, .right {
         max-width: var(--toc-max-width);

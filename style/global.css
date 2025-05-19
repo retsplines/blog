@@ -59,3 +59,7 @@ a:hover, a:active {
     top: -1px;
     fill: var(--text-color);
 }
+
+main {
+    padding: 0 2em;
+}

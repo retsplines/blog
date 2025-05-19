@@ -9,7 +9,7 @@
     --font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 
     /* Layout */
-    --content-width: 55em;
+    --content-width: 60em;
 
     /* Break point for mobile */
     --mobile-breakpoint: 600px;

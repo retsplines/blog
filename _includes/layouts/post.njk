@@ -46,28 +46,28 @@ layout: layouts/base.njk
 
     </div>
 
-    
-
 </section>
 
-<div class="post-cols">
+<main>
+    <div class="post-cols">
 
-    <div class="left">
-        &nbsp;
+        <div class="left">
+            &nbsp;
+        </div>
+
+        {# Content #}
+        <article class="post">
+            {{ content | safe }}
+        </article>
+
+        <div class="right">
+            {# Table of Contents #}
+            <aside class="toc">
+            {{ content | toc | safe }}
+            </aside>
+        </div>
+
     </div>
-
-    {# Content #}
-    <article class="post">
-        {{ content | safe }}
-    </article>
-
-    <div class="right">
-        {# Table of Contents #}
-        <aside class="toc">
-        {{ content | toc | safe }}
-        </aside>
-    </div>
-
 </div>
 
 {# Next/prev #}
