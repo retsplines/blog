@@ -11,6 +11,7 @@ html, body {
     font-feature-settings: "kern" 1;
     font-kerning: normal;
     flex-direction: column;
+    overscroll-behavior: none;
 }
 
 body {

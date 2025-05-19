@@ -2,6 +2,10 @@
  * Post-specific styles.
  */
 
+:root {
+    --toc-max-width: 20em;
+}
+
 /* Post header, contains the title, post-metadata and has a background that may be a hero image */
 section.post-header {
 
@@ -88,13 +92,60 @@ section.post-header {
     }
 }
 
+/* The post page has a special 3-column layout on desktop */
+.post-cols {
+    display: grid;
+    grid-template-columns: 1fr var(--content-width) 1fr;
+    gap: 2em;
+    margin-top: 2em;
+    padding: 0 2em;
+
+    .left, .right {
+        max-width: var(--toc-max-width);
+    }
+}
+
+@media (max-width: 110em) {
+    .post-cols {
+        grid-template-columns: 1fr;
+        gap: 0;
+        
+        .left, .right {
+            display: none;
+        }
+    }
+}
+
+
+/**
+ * TOC
+ */
+aside.toc {
+    position: sticky;
+    top: 2em;
+    left: calc(50% + (var(--col-width) / 2));
+    border-left: 2px solid var(--color-gray-medium);
+    opacity: 40%;
+    font-size: 0.8em;
+    ul {
+        list-style: none;
+    }
+    a {
+        color: var(--text-color);
+    }
+}
+
+aside.toc:hover {
+    opacity: 100%;
+}
+
 /**
  * Post content.
  */
-
 article {
 
-    margin-top: 2em;
+    max-width: var(--content-width);
+    margin: 0 auto;
 
     h1, h2, h3, h4, h5 {
         margin-top: 1.5em;
@@ -144,6 +195,11 @@ article {
         border-radius: 0.25em;
     }
 
+    .overline {
+        text-decoration: overline;
+        text-decoration-thickness: 2px;
+    }
+
     /* Override SVG sizing */
     svg {
         height: auto !important;
@@ -174,6 +230,27 @@ article {
 
         img, picture, svg, figure {
             margin: auto;
+        }
+    }
+
+    /* Tables */
+    table {
+        margin: 1.5em auto;
+        border-collapse: collapse;
+        background-color: var(--background-color-alt);
+        text-align: left;
+        tr {
+            th, td {
+                padding: 0.2em 1em;
+            }
+
+            th {
+                border-bottom: 1px solid var(--color-gray-medium);
+            }
+        }
+
+        tr:nth-child(odd) {
+            background-color: var(--background-color);
         }
     }
 

@@ -4,7 +4,7 @@
 
 /* Centred container */
 .contained {
-    max-width: 60em;
+    max-width: var(--content-width);
     margin-left: auto;
     margin-right: auto;
     padding: 0 2em;

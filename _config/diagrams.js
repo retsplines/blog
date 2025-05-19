@@ -149,4 +149,10 @@ export default function (eleventyConfig, options) {
         return this.page.filePathStem.substring(0, this.page.filePathStem.lastIndexOf('/')) + '/' + outputFileName;
     });
 
+    // Add a shortcode for diagrams
+    eleventyConfig.addShortcode('diagram', async function (type, path) {
+        const diagramUrl = await eleventyConfig.liquid.shortcodes[type].apply(this, [path]);
+        return '<div class="diagram"><img eleventy:ignore src="' + diagramUrl + '" /></div>';
+    }) ;
+
 };

@@ -50,17 +50,25 @@ layout: layouts/base.njk
 
 </section>
 
-{# Table of Contents #}
+<div class="post-cols">
 
-{# <aside>
-  {{ content | toc | safe }}
-</aside> #}
+    <div class="left">
+        &nbsp;
+    </div>
 
-{# Content #}
+    {# Content #}
+    <article class="post">
+        {{ content | safe }}
+    </article>
 
-<article class="contained">
-    {{ content | safe }}
-</article>
+    <div class="right">
+        {# Table of Contents #}
+        <aside class="toc">
+        {{ content | toc | safe }}
+        </aside>
+    </div>
+
+</div>
 
 {# Next/prev #}
 {%- if collections.posts %}
