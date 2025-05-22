@@ -130,7 +130,7 @@ article {
         margin-top: 1.5em;
     }
 
-    > img, > picture, > svg, > figure, > .diagram {
+    > img, > picture, > svg, > figure, > figure > img, > .diagram {
         height: auto;
         display: block;
         max-width: 100% !important;
