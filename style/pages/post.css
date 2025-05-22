@@ -61,26 +61,6 @@ section.post-header {
         }
     }
 
-    /* Post Tag List */
-    .post-tags {
-        font-size: 0.8em;
-        display: inline-flex;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        gap: 0.8em;
-        li {
-            margin: 0;
-            background-color: rgba(255, 255, 255, 0.3);
-            border-radius: 0.1em;
-            padding: 0.2em 0.4em;
-            line-height: 1em;
-            a {
-                text-decoration: none;
-            }
-        }
-    }
-
     /* mobile-width, swap to rows for post metadata items */
     @media (max-width: 600px) {
         .post-metadata {
@@ -150,7 +130,7 @@ article {
         margin-top: 1.5em;
     }
 
-    img, picture, svg, figure, .diagram {
+    > img, > picture, > svg, > figure, > .diagram {
         height: auto;
         display: block;
         max-width: 100% !important;
@@ -226,9 +206,38 @@ article {
     .diagram {
         background: #fff;
         border-radius: 0.5em;
+        position: relative;
 
         img, picture, svg, figure {
             margin: auto;
+        }
+
+        .repo-link {
+            display: none;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 30px;
+            height: 30px;
+            line-height: 27px;
+            border-radius: 50%;
+            text-align: center;
+            background-color: #fff;
+            border: 1px solid var(--color-gray-medium);
+            svg {
+                fill: var(--color-gray-medium) !important;
+            }
+            &:hover {
+                svg {
+                    fill: var(--text-color-link) !important;
+                }
+            }
+        }
+
+        &:hover {
+            .repo-link {
+                display: block;
+            }
         }
     }
 

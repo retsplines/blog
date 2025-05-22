@@ -17,16 +17,7 @@ layout: layouts/base.njk
 
             <h1>{{ title }}</h1>
 
-            {% if (tags | filterTagList).length > 0 %}
-            <ul class="post-tags">
-                {%- for tag in tags | filterTagList %}
-                {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-                <li>
-                    <a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>
-                </li>
-                {%- endfor %}
-            </ul>
-            {% endif %}
+            {% include "taglist.njk" %}
 
             <ul class="post-metadata">
 
@@ -37,7 +28,7 @@ layout: layouts/base.njk
 
                 <li class="right">
                     {% boxicon "github", "logos" %}
-                    <a href="{{ metadata.repo }}/{{ page.inputPath }}" target="_blank">Source</a>
+                    <a href="{{ metadata.repo }}/{{ page.inputPath }}?plain=1" target="_blank">Source</a>
                 </li>
 
             </ul>

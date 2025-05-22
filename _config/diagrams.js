@@ -152,7 +152,19 @@ export default function (eleventyConfig, options) {
     // Add a shortcode for diagrams
     eleventyConfig.addShortcode('diagram', async function (type, path) {
         const diagramUrl = await eleventyConfig.liquid.shortcodes[type].apply(this, [path]);
-        return '<div class="diagram"><img eleventy:ignore src="' + diagramUrl + '" /></div>';
+
+        // Generate a repository URL for the diagram by replacing the './' prefix with the repository URL and the file with the path
+        const diagramRepoUrl = this.page.inputPath
+            .replace(/^\.\//, this.ctx.metadata.repo + '/')
+            .replace(/\/[^\/]*$/, '/' + path);
+
+        // Sneaky way to grab the boxicon for Github
+        const boxiconSvg = await eleventyConfig.liquid.shortcodes['boxicon'].apply(this, ['code-alt']);
+
+        return '<div class="diagram">' + 
+            '<a class="repo-link" title="View source..." href="' + diagramRepoUrl + '" target="_blank" rel="noopener">' + boxiconSvg + '</a>' +
+            '<img eleventy:ignore src="' + diagramUrl + '" />' + 
+            '</div>';
     }) ;
 
 };

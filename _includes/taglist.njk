@@ -1,0 +1,10 @@
+{% if (tags | filterTagList).length > 0 %}
+<ul class="taglist">
+    {%- for tag in tags | filterTagList %}
+    {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+    <li>
+        <a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>
+    </li>
+    {%- endfor %}
+</ul>
+{% endif %}

@@ -11,7 +11,7 @@
         flex-wrap: wrap;
         align-items: baseline;
         counter-increment: start-from -1;
-        margin-bottom: 1em;
+        margin-bottom: 2em;
 
         &:before {
             display: inline-block;
@@ -51,15 +51,6 @@
     width: 100%;
 }
 
-/* Tags */
-.post-tag {
-    font-family: var(--font-family-monospace);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: lowercase;
-    font-style: italic;
-}
-.postlist-item > .post-tag {
-    align-self: center;
+.postlist-tags {
+    margin-left: 1em;
 }
