@@ -166,12 +166,14 @@ article {
         }
     }
 
-    p > code {
-        white-space: nowrap;
-        background-color: var(--background-color-alt);
-        padding: 0.1em 0.4em;
-        border: 0.5px solid var(--color-gray-medium);
-        border-radius: 0.25em;
+    p, li, td {
+        code {
+            white-space: nowrap;
+            background-color: var(--background-color-alt);
+            padding: 0.1em 0.4em;
+            border: 0.5px solid var(--color-gray-medium);
+            border-radius: 0.25em;
+        }
     }
 
     .overline {
