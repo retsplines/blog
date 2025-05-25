@@ -25,6 +25,7 @@ section.post-header {
         display: flex;
         justify-content: flex-start;
         text-align: center;
+        padding: 0 1em;
     
         &.has-image {
             backdrop-filter: blur(7px);
@@ -124,7 +125,7 @@ aside.toc:hover {
 article {
 
     max-width: var(--content-width);
-    width: calc(100vw - 5em);
+    width: calc(100vw - 4em);
     margin: 0 auto;
 
     h1, h2, h3, h4, h5 {
