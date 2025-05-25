@@ -54,7 +54,7 @@ As an example, here's a sinusoid with a -π/4 jump in phase in the centre of the
 
 {% diagram 'gnuplot', 'sine-step.gp' %}
 
-In reality, each symbol period is actually a shaped waveform that has a peak in the middle where the "true" symbol phase is most closely approximated, but smoothly transitions from and to the preceding and suceeding phases. The function that produces this smoothing effect is a low-pass filter. Typically, an [RRC (Root Raised Cosine)](https://en.wikipedia.org/wiki/Root-raised-cosine_filter) filter might be used for this type of modulation.
+In reality, each symbol period is actually a shaped waveform that has a peak in the middle where the "true" symbol phase is most closely approximated, but smoothly transitions from and to the preceding and succeeding phases. The function that produces this smoothing effect is a low-pass filter. Typically, an [RRC (Root Raised Cosine)](https://en.wikipedia.org/wiki/Root-raised-cosine_filter) filter might be used for this type of modulation.
 
 This type of filter can be implemented as a discrete-time digital [FIR (Finite Impulse Response)](https://en.wikipedia.org/wiki/Finite_impulse_response) filter in software. 
 
@@ -74,7 +74,7 @@ So that's the theoretical side of things covered. Let's take a look at some *rea
 
 ### Implementing the Modulator
 
-I implemented the basic π/4 DQPSK modulator to start with. The basic psuedocode for the modulator is quite simple:
+I implemented the basic π/4 DQPSK modulator to start with. The basic pseudocode for the modulator is quite simple:
 
 * Accept an input symbol (value `0b00` to `0b11`)
 * Compute the phase index change caused by symbol in units of π/4 (see the *Bits/Phase Change* table at the start of the post)
@@ -120,7 +120,7 @@ The I2S PIO program constantly reads 32-bit words from the TX FIFO. Upon pulling
 
 ![A logic analyser trace showing the I2S signals.](./i2sdata.png)
 
-My sample rate of 144kHz and 16-bit depth samples (16 bits for I, 16 bits for Q) works out at as a 4.608MHz bit-clock rate. For the I2S master PIO program, each data bit clocked out takes 2 PIO cycles, so the PIO clock needs to run at twice the intended bit-clock rate (9.216MHz). The PIO periperhals run from a integer-fractional divided system clock - I set this to run at (or as close as possible to) the target rate based on the system clock frequency I was using (200MHz).
+My sample rate of 144kHz and 16-bit depth samples (16 bits for I, 16 bits for Q) works out at as a 4.608MHz bit-clock rate. For the I2S master PIO program, each data bit clocked out takes 2 PIO cycles, so the PIO clock needs to run at twice the intended bit-clock rate (9.216MHz). The PIO peripherals run from a integer-fractional divided system clock - I set this to run at (or as close as possible to) the target rate based on the system clock frequency I was using (200MHz).
 
 On the ARM core, I'm generating the symbols, pushing 0-padded samples into the RRC filter buffer, running the filter convolution and obtaining filtered samples. These are packed into 32-bit values (16 bit I, 16 bit Q) and pushed into the PIO TX FIFO with `pio_sm_put_blocking`, which as the name suggests blocks in the event the TX FIFO has no space. This effectively binds the main program to the rate of data leaving the I2S port. Longer term, I'd like to do something fancier with DMA where filtered samples are precomputed and loaded into a large buffer, then DMA'd into the TX FIFO based on data-requests from the PIO peripheral. This would decouple the modulation code from the transmit process. A typical TETRA burst is 255 symbols long, which at 8 samples per symbol is 2,040 samples, so 8,160 bytes, so buffering an entire burst before transmission would be very doable in that case.
 
@@ -128,11 +128,11 @@ On the ARM core, I'm generating the symbols, pushing 0-padded samples into the R
 
 I don't have a really good way of testing the modulator output just yet. My IFR2968 can do some measurements of π/4 DQPSK modulation but it'll need to be at RF frequency not baseband for that to work.
 
-![A screenshot of an oscillscope in X/Y timebase mode showing the π/4 DQPSK constellation. It's quite fuzzy.](./pi4dqpsk.png)
+![A screenshot of an oscilloscope in X/Y timebase mode showing the π/4 DQPSK constellation. It's quite fuzzy.](./pi4dqpsk.png)
 
 One property of π/4 DQPSK is that inputting `00` symbol values into the modulator causes a +1/4π phase change. 8 of those makes one full rotation around the unit circle (one full wave period). This means the modulator should produce a tone of `(sym_rate / 8)` Hz in this scenario. For 18,000 symbols/second, this equates to a 2.25kHz tone^[A sequence like this appears in the TETRA Synchronisation Downlink Bursts to provide an accurate frequency reference, presumably to help the carrier detection logic in MSs eliminate frequency error. There's also a short period of `11` symbols which produce a -3/4π phase change on each symbol, creating a tone 6.75kHz *below* the carrier frequency.].
 
-![A screenshot of an oscillscope in X/Y timebase mode showing a pretty decent looking unit circle.](./circle.png)
+![A screenshot of an oscilloscope in X/Y timebase mode showing a pretty decent looking unit circle.](./circle.png)
 
 And, yeah, it works! There is a bit of offset/delay between the I & Q channels, unsure what exactly is causing this right now but I'm sure the PCM5102A isn't massively linear when it comes to the offset/delay between the two channels.
 
