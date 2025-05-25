@@ -123,7 +123,7 @@ aside.toc:hover {
  */
 article {
 
-    max-width: var(--content-width);
+    width: calc(100vw - 5em);
     margin: 0 auto;
 
     h1, h2, h3, h4, h5 {
@@ -147,6 +147,7 @@ article {
 
     /* Code - as inline and blocks */
     pre {
+        overflow-x: auto !important;
         margin-top: 2em !important;
         font-family: var(--font-family-monospace);
         :not([class*="language-"]) {

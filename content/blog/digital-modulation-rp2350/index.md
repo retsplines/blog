@@ -35,16 +35,16 @@ The possible phase states and transitions between them are visualised above.
 
 In this cartesian view, we can see that the X/Y (or In-Phase & Quadrature; or Real & Imaginary) values for the distinct absolute phases are as follows, starting with the fully in-phase point on the rightmost side of the constellation and proceeding counter-clockwise.
 
-| Phase   | In-Phase (Real) | Quadrature (Imag.) |
-| ------- | --------------- | ------------------ |
-| 0       | 1               | 0                  |
-| 1 × π/4 | cos(π/4)        | cos(π/4)           |
-| 2 × π/4 | 0               | 1                  |
-| 3 × π/4 | -cos(π/4)       | cos(π/4)           |
-| π       | -1              | 0                  |
-| 5 × π/4 | -cos(π/4)       | -cos(π/4)          |
-| 6 × π/4 | 0               | 1                  |
-| 7 × π/4 | cos(π/4)        | -cos(π/4)          |
+| Phase   | In-Phase  | Quadrature |
+| ------- | --------- | ---------- |
+| 0       | 1         | 0          |
+| 1 × π/4 | cos(π/4)  | cos(π/4)   |
+| 2 × π/4 | 0         | 1          |
+| 3 × π/4 | -cos(π/4) | cos(π/4)   |
+| π       | -1        | 0          |
+| 5 × π/4 | -cos(π/4) | -cos(π/4)  |
+| 6 × π/4 | 0         | 1          |
+| 7 × π/4 | cos(π/4)  | -cos(π/4)  |
 
 ### Pulse Shaping
 
