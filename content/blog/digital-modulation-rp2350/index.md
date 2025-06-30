@@ -43,7 +43,7 @@ In this cartesian view, we can see that the X/Y (or In-Phase & Quadrature; or Re
 | 3 × π/4 | -cos(π/4) | cos(π/4)   |
 | π       | -1        | 0          |
 | 5 × π/4 | -cos(π/4) | -cos(π/4)  |
-| 6 × π/4 | 0         | 1          |
+| 6 × π/4 | 0         | -1          |
 | 7 × π/4 | cos(π/4)  | -cos(π/4)  |
 
 ### Pulse Shaping
