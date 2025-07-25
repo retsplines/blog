@@ -51,6 +51,8 @@ Discord uses [k-ID](https://www.k-id.com/). Behind the scenes, k-ID appears to u
 
 The choices for verification are a face scan, which they insist will not be uploaded to their servers, and an ID verification using a third-party that specialises in document-based identity verification. I didn't try the ID verification route.
 
+![k-ID's intro screen with the instructions for the face scan.](./k-id-intro.png)
+
 The face scan involves a [frontend app](https://d3ogqhtsivkon3.cloudfront.net/) that uses some WebAssembly components to perform some computer vision analysis on a live webcam image. During the test, you can be asked to perform a few actions like opening your mouth or looking left or right. This is part of the _"liveness testing"_ to validate that you're not just showing a static picture of a face or wearing a mask. These are the possible prompts that you can be given during the verification:
 
 ```
@@ -107,8 +109,6 @@ I'm not really a Bluesky user, but I do have an account and couldn't help but ta
 KWS is Epic Game's foray into the Age Assurance market. Yoti seems to be the technology behind the face scanning aspect of KWS. I didn't try the identity card/document scanning option.
 
 Privacy-wise, it's among the very worst. 
-
-![Yoti's intro screen with the instructions for the face scan.](./yoti-intro.png)
 
 Yoti is unashamedly a server-side solution. Your image is straight-up `POST`ed to their backend after some framing and pre-processing in the frontend app. They [pinky-swear](https://www.yoti.com/privacy/age-verification/) that they delete everything after verification, but who knows. There's no independent validation of this. They could be storing images forever, training models on them, selling them, who knows. They could be dumped into a public S3 bucket with a prefix that reveals what site you're verifying against for all you know.
 
