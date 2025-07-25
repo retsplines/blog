@@ -1,5 +1,5 @@
 ---
-title: Age Verification Is A Scam
+title: Age Verification Is a Scam
 description: Bad for privacy, good for profits. Why AV won't work.
 tags: [internet, thoughts]
 hero_image: ./allfaces.png
