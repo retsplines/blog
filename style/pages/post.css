@@ -169,6 +169,20 @@ article {
         }
     }
 
+    video {
+        margin-top: 2em !important;
+        max-width: 100%;
+        height: auto;
+    }
+
+    blockquote {
+        border-left: 1em solid var(--color-gray-medium);
+        color: var(--color-gray-high);
+        padding-left: 1em;
+        font-style: italic;
+        margin: 1.5em 0;
+    }
+
     p, li, td {
         code {
             white-space: nowrap;
