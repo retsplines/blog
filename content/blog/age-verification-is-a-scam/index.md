@@ -92,7 +92,7 @@ I only looked at the facial scanning option, but there is also an identity docum
 I found that I could quite easily spoof Go.cam with static images, either using a virtual webcam device or simply held up in front of a real camera. There's some basic liveness testing which involves asking you to smile/relax but that wasn't a really challenge. There's a public demo for Go.cam which you can [try yourself](https://go.cam/demo/?).
 
  <video controls>
-  <source src="./gocam-spoof.mp4" type="video/mp4">
+  <source src="{{ './gocam-spoof.mp4' | url }}" type="video/mp4">
   Your browser does not support the video tag.
 </video> 
 
