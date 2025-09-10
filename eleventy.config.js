@@ -12,6 +12,7 @@ import pluginDiagrams from "./_config/diagrams.js";
 import metadata from "./_data/metadata.js";
 import pluginTOC from "eleventy-plugin-toc";
 import markdown from "./_config/markdown.js";
+import pluginDownloads from './_config/downloads.js';
 
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
@@ -35,7 +36,12 @@ export default async function(eleventyConfig) {
         .addPassthroughCopy({
             "./public/": "/"
         })
+
+        // Media files
         .addPassthroughCopy("./content/blog/**/*.mp4")
+        
+        // Downloads associated with posts
+        .addPassthroughCopy("./content/blog/**/downloads/*")
         .addPassthroughCopy("./content/feed/pretty-atom-feed.xsl");
 
     // Run Eleventy when these files change:
@@ -160,6 +166,7 @@ export default async function(eleventyConfig) {
 
     // Filters
     eleventyConfig.addPlugin(pluginFilters);
+    eleventyConfig.addPlugin(pluginDownloads);
     eleventyConfig.addPlugin(IdAttributePlugin);
     eleventyConfig.addShortcode("currentBuildDate", () => {
         return (new Date()).toISOString();
