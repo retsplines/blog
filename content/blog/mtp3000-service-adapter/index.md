@@ -2,7 +2,7 @@
 title: MTP3000 RF Service Adapter
 description: Tool to connect to the RF Service port on Motorola MTP3000 TETRA Radios
 tags: [radio, cad, tetra]
-date: 2025-06-24
+date: 2025-09-10
 accent: "#252e24ff"
 ---
 
