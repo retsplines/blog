@@ -144,7 +144,7 @@ article {
         font-style: italic;
         font-size: 0.85rem;
         text-align: center;
-        color: var(--color-gray-medium);
+        color: var(--color-gray-high);
     }
 
     /* Code - as inline and blocks */

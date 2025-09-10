@@ -9,7 +9,13 @@ layout: layouts/base.njk
 {# Post-specific styles #}
 {%- css %}{% include "style/pages/post.css" %}{%- endcss %}
 
-<section class="post-header"  style="background-color: {{ accent | default('black') }}; background-image: url({{ hero_image | imageUrl() }})">
+{% set bgimage = '/img/folfy-header-bg.jpg' %}
+
+{% if hero_image %}
+    {% set bgimage = hero_image | imageUrl() %}
+{% endif %}
+
+<section class="post-header" style="background-color: {{ accent | default('#000000') }}; background-image: url({{ bgimage }})">
     
     <div class="cover {% if hero_image %}has-image{% endif %}">
 

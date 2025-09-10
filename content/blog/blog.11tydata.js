@@ -4,5 +4,4 @@ export default {
     ],
     "layout": "layouts/post.njk",
     "date": "git Last Modified",
-    "accent": "black",
 };

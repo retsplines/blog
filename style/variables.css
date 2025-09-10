@@ -25,9 +25,9 @@
     --color-gray-high: #333;
 
     --text-color: var(--color-gray-high);
-    --text-color-link: #1493fb;
-    --text-color-link-active: #6969f7;
-    --text-color-link-visited: #17050F;
+    --text-color-link: #b87f34;
+    --text-color-link-active: #b87f34;
+    --text-color-link-visited: #b87f34;
 
     --syntax-tab-size: 4;
 
@@ -44,9 +44,9 @@
         --color-gray-high: #e4e1ec;
 
         --text-color: var(--color-gray-high);
-        --text-color-link: #1493fb;
-        --text-color-link-active: #6969f7;
-        --text-color-link-visited: #a6a6f8;
+        --text-color-link: #b87f34;
+        --text-color-link-active: #b87f34;
+        --text-color-link-visited: #b87f34;
 
         --logo: url('/img/long-foxdog-white.png');
     }

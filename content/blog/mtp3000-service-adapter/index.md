@@ -3,7 +3,6 @@ title: MTP3000 RF Service Adapter
 description: Tool to connect to the RF Service port on Motorola MTP3000 TETRA Radios
 tags: [radio, cad, tetra]
 date: 2025-09-10
-accent: "#252e24ff"
 ---
 
 This is just a short post about a little adapter I designed for the [Motorola MTP3000](https://www.motorolasolutions.com/en_xp/products/tetra/devices/mtp3250.html) series of TETRA radios. The adapter allows you to connect to the antenna port on the rear of the radio for testing or other situations where you don't want the fixed whip antenna fitted. Motorola often calls this the "VA" (*Vehicular Adapter*) port in their service manuals since it's often used for "car kit" type situations where you want to use an external vehicle-mounted antenna.
