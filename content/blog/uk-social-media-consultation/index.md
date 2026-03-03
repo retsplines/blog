@@ -46,14 +46,6 @@ My responses are encoded as quotes. All other text is from the [consultation doc
 
 > Not only would this leave millions of young people seriously isolated from the world, their distant friends overseas and from support for their issues and problems; but it would introduce a requirement for all *adults* to submit incredibly sensitive identity information to inherently untrustworthy services that profit from data collection.
 > 
-> The Online Safety Act introduced similar requirements for adult content and user-to-user services, and we are already seeing the disastrous consequences of that. Already, Discord, an online chat service, has suffered a data breach leading to the leaking of 70,000 identity documents. 
-> 
-> This decision would punish already-struggling, isolated young people; while also compromising the privacy and safety of every adult.
-
-**What do you think the impacts would be of having a minimum age requirement higher than 13 for social media services?**
-
-> Not only would this leave millions of young people seriously isolated from the world, their distant friends overseas and from support for their issues and problems; but it would introduce a requirement for all *adults* to submit incredibly sensitive identity information to inherently untrustworthy services that profit from data collection.
-> 
 > The Online Safety Act introduced similar requirements for adult content and user-to-user services, and we are already seeing the disastrous consequences of that. Already, Discord, an online chat service, has suffered a data breach leading to the leaking of 70,000 identity documents that were only required to satisfy age verification requirements.
 > 
 > The companies providing Age Verification services will profit greatly from the data collection requirements imposed by this. Many are owned by untrustworthy U.S. companies linked to surveillance and military applications (Palantir, for instance).
